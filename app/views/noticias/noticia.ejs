@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8"/>
+			<title>Portal de notícias</title>
+		</head>
+	<body>
+		<% if(noticia.length > 0) { %>
+		<h1>Noticia</h1>
+		<h2>Titulo : <%= noticia[0].titulo%></h2>
+		<h4>Contéudo : <%= noticia[0].noticia%></h2>
+		<h4>Data : <%= noticia[0].data_criacao%></h4>
+		<% } 
+			else{
+		%>
+		<h4>Nenhum dado para visualisar</h4>
+		<% } %>
+	</body>
+</html>
